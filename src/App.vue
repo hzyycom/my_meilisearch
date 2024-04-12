@@ -1,7 +1,8 @@
 <template>
-  <!-- <head>
+  <head>
     <title> 财经速递 </title>
-  </head> -->
+  </head>
+  <meta name="baidu-site-verification" content="codeva-Dcf8ciG6SC" />
   <div>
     <!--使用 router-link 组件进行导航 -->
     <!--通过传递 `to` 来指定链接 -->
