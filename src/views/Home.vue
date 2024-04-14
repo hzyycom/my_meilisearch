@@ -7,13 +7,13 @@
 
 
 <script>
-import MeiliSearch from "../components/MeiliSearch.vue";
+// import MeiliSearch from "../components/MeiliSearch.vue";
 // import Menu from "../components/Menu";
 
 export default {
   name: "App",
   components: {
-    MeiliSearch
+    MeiliSearch: () => import('../components/MeiliSearch.vue')
   },
 };
 </script>

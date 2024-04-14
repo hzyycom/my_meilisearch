@@ -61,5 +61,7 @@ export default {
 
 
 <style>
+
 @import "../css/basic_meilisearch.css"
+
 </style>
