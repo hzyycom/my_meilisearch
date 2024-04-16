@@ -5,7 +5,7 @@ module.exports = defineConfig({
   ,pages:{
     index:{
       entry:'src/main.js',
-      title:'财经速递'
+      title:'棱镜视野_财经速递'
     }
   }
 })
