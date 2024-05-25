@@ -53,7 +53,8 @@ export default {
 
     return {
       searchClient: instantMeiliSearch(
-        props.host
+        props.host,
+        "YqvEfpsUzmCtT5HK0aobSvssCwfQLpj-tdMbiY7mpW4"
       ).searchClient,
       onStateChange({uiStatus, setUiStatus}){
           uiStatus['test_cls_5:ctime:desc']["query"] = '"' + uiStatus['test_cls_5:ctime:desc']['query'] + '"';
