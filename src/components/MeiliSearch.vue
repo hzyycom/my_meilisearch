@@ -1,7 +1,10 @@
 <template>
   
   <!-- 搜索索引 -->
-  <ais-instant-search :search-client="searchClient" index-name="test_cls_5:ctime:desc">
+  <ais-instant-search :search-client="searchClient" 
+    index-name="test_cls_5:ctime:desc"
+    :on-state-change="onStateChange"
+  >
     
     <!-- 搜索框 -->
     <ais-search-box placeholder='搜索词加双引号"" 搜索更精准'/>
@@ -51,7 +54,11 @@ export default {
     return {
       searchClient: instantMeiliSearch(
         props.host
-      ).searchClient
+      ).searchClient,
+      onStateChange({uiStatus, setUiStatus}){
+          uiStatus['test_cls_5:ctime:desc']["query"] = '"' + uiStatus['test_cls_5:ctime:desc']['query'] + '"';
+          setUiStatus(uiStatus);
+      }
       
     };
   },
