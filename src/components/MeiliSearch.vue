@@ -74,9 +74,11 @@ export default {
           var words = query.split(" ");
           words = words.map(element =>{
             if(element != ""){
-              element =  '"' + element + '"'
+              element =  '"' + element + '"';
               console.log("element: "  +  element);
+              return element;
             }
+            
           }
           )
           // .filter( element =>{
