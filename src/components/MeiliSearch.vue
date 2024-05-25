@@ -59,12 +59,14 @@ export default {
         "YqvEfpsUzmCtT5HK0aobSvssCwfQLpj-tdMbiY7mpW4"
       ).searchClient,
       initialUiState:{
-        test_cls_5:"杭州",
-        page:10
+        test_cls_5:{
+          query: "杭州",
+          page:10
       },
-      onStateChange({uiStatus, setUiStatus}){
-          uiStatus['test_cls_5:ctime:desc']["query"] = '"' + uiStatus['test_cls_5:ctime:desc']['query'] + '"';
-          setUiStatus(uiStatus);
+      },
+      onStateChange({uiStatus, setUiState}){
+          uiState['test_cls_5:ctime:desc']["query"] = '"' + uiState['test_cls_5:ctime:desc']['query'] + '"';
+          setUiState(uiStatus);
       }
       
     };
