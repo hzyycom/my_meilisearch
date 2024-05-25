@@ -66,8 +66,8 @@ export default {
       },
       onStateChange({uiState, setUiState}){
           console.log("uistatus: "  +  uiState['test_cls_5:ctime:desc']['query'])
-          uiState['test_cls_5:ctime:desc']["query"] = '"' + uiState['test_cls_5:ctime:desc']['query'] + '"';
-          setUiState(uiState);
+          // uiState['test_cls_5:ctime:desc']["query"] = '"' + uiState['test_cls_5:ctime:desc']['query'] + '"';
+          // setUiState(uiState);
       }
       
     };
