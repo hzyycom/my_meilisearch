@@ -85,6 +85,9 @@ export default {
 
           uiState[searchIndex]["query"] = query;
           setUiState(uiState);
+        }else{
+          uiState[searchIndex]["query"] = "";
+          setUiState(uiState);
         }  
       }
       
