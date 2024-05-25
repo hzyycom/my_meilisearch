@@ -67,7 +67,8 @@ export default {
       onStateChange({uiState, setUiState}){
         const searchIndex = 'test_cls_5:ctime:desc';
         var query = uiState[searchIndex]["query"];
-        console.log("uistatus: "  +  query);
+        console.log("uistatus: "  +  uiState[searchIndex]);
+        console.log("query: "  +  query);
 
         if(query != ""){
           var words = query.split(" ");
@@ -80,6 +81,7 @@ export default {
           ;
 
           query = words.join(" ")
+          console.log("query join: "  +  query);
 
 
           uiState[searchIndex]["query"] = query;
