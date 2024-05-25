@@ -69,7 +69,7 @@ export default {
         var query = uiState[searchIndex]["query"];
         
         // 分割字符串并给每个word添加双引号
-        if(query != ""){
+        if(query != "" && query != undefined){
           var words = query.split(" ");
           words = words.map(element =>{
             if(element != ""){
@@ -81,7 +81,7 @@ export default {
 
           // 字符串数组拼接成一个字符串
           query = words.join(" ")
-          // console.log("query join: "  +  query);
+          console.log("query join: "  +  query);
 
           uiState[searchIndex]["query"] = query;
           setUiState(uiState);
