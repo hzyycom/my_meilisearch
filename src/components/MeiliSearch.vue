@@ -72,13 +72,17 @@ export default {
 
         if(query != ""){
           var words = query.split(" ");
-          words.forEach(function(element) {
-            element =  '\"' + element + '\"';
-          })
+          words = words.map(element =>{
+            if(element != ""){
+              element =  '"' + element + '"'
+            }
+          }
+          )
           // .filter( element =>{
           //   return element != ""
           // })
           ;
+
 
           query = words.join(" ")
           console.log("query join: "  +  query);
