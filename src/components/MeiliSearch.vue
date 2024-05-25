@@ -65,9 +65,26 @@ export default {
       },
       },
       onStateChange({uiState, setUiState}){
-          console.log("uistatus: "  +  uiState['test_cls_5:ctime:desc']['query'])
-          // uiState['test_cls_5:ctime:desc']["query"] = '"' + uiState['test_cls_5:ctime:desc']['query'] + '"';
-          // setUiState(uiState);
+        const searchIndex = 'test_cls_5:ctime:desc';
+        var query = uiState[searchIndex]["query"];
+        console.log("uistatus: "  +  query);
+
+        if(query != ""){
+          var words = query.split(" ");
+          words.array.forEach(element => {
+            element =  '"' + element + '"';
+          }).filter( element =>{
+            return element != ""
+          }
+
+          );
+
+          query = words.join(" ")
+
+
+          uiState[searchIndex]["query"] = query;
+          setUiState(uiState);
+        }  
       }
       
     };
