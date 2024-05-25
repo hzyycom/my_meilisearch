@@ -75,6 +75,7 @@ export default {
           words = words.map(element =>{
             if(element != ""){
               element =  '"' + element + '"'
+              console.log("element: "  +  element);
             }
           }
           )
