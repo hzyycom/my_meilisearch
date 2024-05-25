@@ -1,9 +1,11 @@
 <template>
   
   <!-- 搜索索引 -->
-  <ais-instant-search :search-client="searchClient" 
+  <ais-instant-search 
     index-name="test_cls_5:ctime:desc"
+    :search-client="searchClient" 
     :on-state-change="onStateChange"
+    :initial-ui-state="initialUiState"
   >
     
     <!-- 搜索框 -->
@@ -56,6 +58,10 @@ export default {
         props.host,
         "YqvEfpsUzmCtT5HK0aobSvssCwfQLpj-tdMbiY7mpW4"
       ).searchClient,
+      initialUiState:{
+        test_cls_5:"杭州",
+        page:10
+      },
       onStateChange({uiStatus, setUiStatus}){
           uiStatus['test_cls_5:ctime:desc']["query"] = '"' + uiStatus['test_cls_5:ctime:desc']['query'] + '"';
           setUiStatus(uiStatus);
