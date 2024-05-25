@@ -73,11 +73,11 @@ export default {
           var words = query.split(" ");
           words.array.forEach(element => {
             element =  '"' + element + '"';
-          }).filter( element =>{
-            return element != ""
-          }
-
-          );
+          })
+          // .filter( element =>{
+          //   return element != ""
+          // })
+          ;
 
           query = words.join(" ")
 
