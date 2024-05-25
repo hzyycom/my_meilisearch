@@ -67,29 +67,21 @@ export default {
       onStateChange({uiState, setUiState}){
         const searchIndex = 'test_cls_5:ctime:desc';
         var query = uiState[searchIndex]["query"];
-        console.log("uistatus: "  +  uiState[searchIndex]);
-        console.log("query: "  +  query);
-
+        
+        // 分割字符串并给每个word添加双引号
         if(query != ""){
           var words = query.split(" ");
           words = words.map(element =>{
             if(element != ""){
               element =  '"' + element + '"';
-              console.log("element: "  +  element);
               return element;
             }
-            
-          }
-          )
-          // .filter( element =>{
-          //   return element != ""
-          // })
+          })
           ;
 
-
+          // 字符串数组拼接成一个字符串
           query = words.join(" ")
-          console.log("query join: "  +  query);
-
+          // console.log("query join: "  +  query);
 
           uiState[searchIndex]["query"] = query;
           setUiState(uiState);
