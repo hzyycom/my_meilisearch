@@ -73,7 +73,7 @@ export default {
         if(query != ""){
           var words = query.split(" ");
           words.forEach(function(element) {
-            element =  '"' + element + '"';
+            element =  '\"' + element + '\"';
           })
           // .filter( element =>{
           //   return element != ""
