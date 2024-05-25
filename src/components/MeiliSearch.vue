@@ -9,7 +9,7 @@
   >
     
     <!-- 搜索框 -->
-    <ais-search-box placeholder='搜索词加双引号"" 搜索更精准'/>
+    <ais-search-box placeholder='输入关键词 聚合信息'/>
     
     <!-- 搜索条件 -->
     <ais-configure
