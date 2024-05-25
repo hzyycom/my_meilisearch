@@ -88,7 +88,9 @@ export default {
         }else{
           uiState[searchIndex]["query"] = "";
           setUiState(uiState);
-        }  
+          console.log("query join2: "  +  query);
+        }
+        console.log("rest query: "  +  uiState[searchIndex]["query"]) 
       }
       
     };
