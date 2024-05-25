@@ -65,6 +65,7 @@ export default {
       },
       },
       onStateChange({uiStatus, setUiState}){
+          console.log("uistatus: "  +  uiState['test_cls_5:ctime:desc']['query'])
           uiState['test_cls_5:ctime:desc']["query"] = '"' + uiState['test_cls_5:ctime:desc']['query'] + '"';
           setUiState(uiStatus);
       }
