@@ -2,7 +2,7 @@
 <template>
   <!-- 搜索框 -->
 
-  <MeiliSearch host="http://47.120.63.234/search"></MeiliSearch>
+  <MeiliSearch host="https://weipaitang.online/search"></MeiliSearch>
 </template>
 
 
