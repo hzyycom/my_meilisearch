@@ -23,7 +23,7 @@
 </template>
 
 <script>
-import MeiliSearch from "../components/MeiliSearch.vue";
+import MeiliSearch from "./components/MeiliSearch.vue";
 // import Menu from "../components/Menu";
 
 export default {
