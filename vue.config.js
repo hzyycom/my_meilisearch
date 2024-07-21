@@ -5,7 +5,7 @@ module.exports = defineConfig({
   ,pages:{
     index:{
       entry:'src/main.js',
-      title:'棱镜视野_财经速递'
+      title:'聚搜通义-搜索工具'
     }
   }
 })
